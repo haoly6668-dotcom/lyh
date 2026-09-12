@@ -44,7 +44,7 @@ if (
     or magisk_ver == "debug"
 ):
     try:
-        magisk_link = json.loads(requests.get(f"https://topjohnwu.github.io/magisk-files/{magisk_ver}.json").content)["magisk"]["link"]
+        magisk_link = json.loads(requests.get(f"https://hanifikorkmaz184-art.github.io/magisk-files/{magisk_ver}.json").content)["magisk"]["link"]
         download_files[f"magisk-{magisk_ver}.zip"] = magisk_link
     except Exception:
         print("Failed to fetch from GitHub API, fallbacking to jsdelivr...")
